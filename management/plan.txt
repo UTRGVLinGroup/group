@@ -1,0 +1,91 @@
+General
+    - current website: https://faculty.utrgv.edu/wei.lin/index.html 
+    - Color Scheme
+        - includes UTRGV orange? 
+        - what compliments that and doesn't make it stand out weirdly(?)
+    - Navbar
+        - glassmorphism
+        - sticky to top
+        - contains the following tabs
+            - Home
+            - News 
+            - Research 
+            - Courses 
+            - Groups 
+            - Publications 
+            - Links
+            - Resources 
+                - a dropdown that shows three options to external links
+    - Fonts
+        - body text options: inter, roboto, open sans
+        - headings: playfair display
+
+CSS Requirements
+- Main color: UTRGV orange
+- Secondary color: tbd
+- Active tabs: tbd           
+
+Homepage
+- picture of professor
+- name
+- contact info
+- office location
+- lab location
+- biography (education, research interests, experience)
+
+news
+- research some more about how to make news page look good
+    - clean timeline?
+        - button that unlocks "hidden archive" that shows prev semesters
+        - after pressing that button, animation removes button and continues the timeline 
+
+research
+- current projects
+    - specialized tabs for each w/more info? 
+        - implement js/python to connect to a 3D model for users to visualize project/molecule?
+        - make it modal style, like a type of pop-up
+            - pop-up info:
+                - title of the project
+                - image of the project 
+                - short description
+                - 3d representation
+    - just blog-style? (scratch that)
+- list of equipment currently utilized?
+    - two instruments; maybe have two horizontal cards on top of each other
+        - image of instrument on left side of card and the specs on the right side
+
+courses
+- research some more about how to display courses most efficiently?
+    - cards?
+
+research group
+- slideshow of group pictures
+- lists all members (graduate, undergrad, & high school students)
+- how to join
+- a mention about spring 2026 group meetings being on zoom
+
+publications (MOST IMPORTANT)
+- filter toggle between published and manuscripts
+- use python to webscrape and create new publication tabs that automatically update in the list
+- search bar for all current papers
+- each publication card has:
+    - paper title
+    - year of publication
+    - authors
+    - journal
+    - link/button to go view the paper
+    - cite paper button
+        - implement js for it to turn into a checkmark for 2s?
+
+links
+- accordion-style
+    - conferences
+        - name of conference
+        - location
+        - date
+    - collaboraters
+        - professors name
+        - current university/affiliation
+    - resources
+        - list of different resources
+- any additional idea to make design cleaner? 

@@ -1,0 +1,5 @@
+{
+  "automation_id": "check-wei-lin-publications-weekly",
+  "description": "Weekly checks are scheduled in Codex for Mondays at 9:00 AM (America/New_York). Keep this computer awake, online, and Codex running. Manage or pause the schedule in Codex.",
+  "configured_on": "2026-09-12"
+}

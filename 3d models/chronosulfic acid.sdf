@@ -1,0 +1,130 @@
+86739793
+  -OEChem-03142618472D
+
+ 14 12  0     0  0  0  0  0  0999 V2000
+    1.4030    0.8660    0.0000 Cr  0  0  0  0  0  0  0  0  0  0  0  0
+    1.4030    4.5981    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2690    1.3660    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5369    0.3660    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2690    5.0981    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5369    4.0981    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9030    1.7320    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9030    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9030    5.4641    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9030    3.7320    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8059    1.0560    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.6760    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8059    4.7881    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    4.4081    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  3  1  0  0  0  0
+  1  4  1  0  0  0  0
+  1  7  2  0  0  0  0
+  1  8  2  0  0  0  0
+  2  5  1  0  0  0  0
+  2  6  1  0  0  0  0
+  2  9  2  0  0  0  0
+  2 10  2  0  0  0  0
+  3 11  1  0  0  0  0
+  4 12  1  0  0  0  0
+  5 13  1  0  0  0  0
+  6 14  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+86739793
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+163
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+8
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+4
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+0
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADcYAAPABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAIAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+dihydroxy(dioxo)chromium;sulfuric acid
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+dihydroxy(dioxo)chromium;sulfuric acid
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+dihydroxy(dioxo)chromium;sulfuric acid
+
+> <PUBCHEM_IUPAC_NAME>
+dihydroxy(dioxo)chromium;sulfuric acid
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+bis(oxidanyl)-bis(oxidanylidene)chromium;sulfuric acid
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+dihydroxy(diketo)chromium;sulfuric acid
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/Cr.H2O4S.2H2O.2O/c;1-5(2,3)4;;;;/h;(H2,1,2,3,4);2*1H2;;/q+2;;;;;/p-2
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+KPVWDKBJLIDKEP-UHFFFAOYSA-L
+
+> <PUBCHEM_EXACT_MASS>
+215.903193
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+CrH4O8S
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+216.09
+
+> <PUBCHEM_SMILES>
+OS(=O)(=O)O.O[Cr](=O)(=O)O
+
+> <PUBCHEM_CONNECTIVITY_SMILES>
+OS(=O)(=O)O.O[Cr](=O)(=O)O
+
+> <PUBCHEM_CACTVS_TPSA>
+158
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+215.903193
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+10
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+2
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+$$$$

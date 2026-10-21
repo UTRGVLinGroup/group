@@ -1,0 +1,2 @@
+All browser integration checks passed.
+Tested http://127.0.0.1:8080/dist/ at 1440, 768, 375, 320px; JS disabled; clipboard denied; viewer unavailable.

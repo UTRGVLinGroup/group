@@ -1,0 +1,127 @@
+[
+  {
+    "label": "International Symposium on Molecular Spectroscopy",
+    "source": "https://isms.illinois.edu/",
+    "destination": "https://isms.illinois.edu/"
+  },
+  {
+    "label": "Austin Symposium on Molecular Structure and Dynamics at Dallas",
+    "source": "https://sites.smu.edu/dedman/austinsymposium",
+    "destination": "https://sites.smu.edu/dedman/austinsymposium"
+  },
+  {
+    "label": "American Chemical Society National Meeting",
+    "source": "https://www.acs.org/content/acs/en/meetings/acs-meetings.html",
+    "destination": "https://www.acs.org/content/acs/en/meetings/acs-meetings.html"
+  },
+  {
+    "label": "Annual Biomedical Research Conference for Minority Students (ABRCMS)",
+    "source": "https://www.abrcms.org/",
+    "destination": "https://www.abrcms.org/"
+  },
+  {
+    "label": "Annual Society for Advancement of Chicanos/Hispanics and Native Americans in Science Conference (SACNAS)",
+    "source": "https://www.sacnas.org/conference",
+    "destination": "https://www.sacnas.org/conference"
+  },
+  {
+    "label": "UTRGV College of Sciences Annual Research Conference",
+    "source": "https://www.utrgv.edu/arc/",
+    "destination": "https://www.utrgv.edu/arc/"
+  },
+  {
+    "label": "UTRGV Engaged Scholar Symposium",
+    "source": "https://www.utrgv.edu/es2/",
+    "destination": "https://www.utrgv.edu/es2/"
+  },
+  {
+    "label": "Professor Yasuki Endo - National Yang Ming Chiao Tung University, Taiwan",
+    "source": "https://scholar.nctu.edu.tw/en/persons/yasuki-endo",
+    "destination": "https://scholar.nycu.edu.tw/en/persons/yasuki-endo/"
+  },
+  {
+    "label": "Professor G. Smitty Grubbs - Missouri Science and Technology University",
+    "source": "http://web.mst.edu/~grubbsg/",
+    "destination": "https://sites.mst.edu/grubbsg/grubbs-bio/"
+  },
+  {
+    "label": "Professor Yuan Pern Lee - National Yang Ming Chiao Tung University, Taiwan",
+    "source": "https://yplab.weebly.com/",
+    "destination": "https://yplab.weebly.com/"
+  },
+  {
+    "label": "Professor Kenneth Leopold - University of Minnesota",
+    "source": "http://kleopold.chem.umn.edu/people/kenneth-r-leopold",
+    "destination": "https://kleopold.chem.umn.edu/people/kenneth-r-leopold"
+  },
+  {
+    "label": "Professor Michael Tubergen - Kent State University",
+    "source": "https://sites.google.com/kent.edu/tubergen-welcome?usp=sharing",
+    "destination": "https://sites.google.com/kent.edu/tubergen-welcome?usp=sharing"
+  },
+  {
+    "label": "Professor Yong Zhou - Electrical Engineering Department of UTRGV",
+    "source": "https://webapps.utrgv.edu/aa/dm/index.cfm?action=profile&user=yong.zhou",
+    "destination": "https://webapps.utrgv.edu/aa/dm/index.cfm?action=profile&user=yong.zhou"
+  },
+  {
+    "label": "Bibliography of Rotational Spectra of Weakly Bound Complexes",
+    "source": "http://snovick.faculty.wesleyan.edu/files/2020/09/vdw.pdf",
+    "destination": "https://snovick.faculty.wesleyan.edu/files/2020/09/vdw.pdf"
+  },
+  {
+    "label": "PROSPE - Programs for ROtational SPEctroscopy",
+    "source": "http://info.ifpan.edu.pl/~kisiel/prospe.htm",
+    "destination": "http://info.ifpan.edu.pl/~kisiel/prospe.htm"
+  },
+  {
+    "label": "Cologne Database for Molecular Spectroscopy and Pickett's Programs",
+    "source": "http://zeus.ph1.uni-koeln.de/cdms/pickett",
+    "destination": "https://cdms.astro.uni-koeln.de/classic/pickett"
+  },
+  {
+    "label": "PGOPHER, a program for rotational, vibrational, and electronic spectra",
+    "source": "http://pgopher.chm.bris.ac.uk/",
+    "destination": "https://pgopher.chm.bris.ac.uk/"
+  },
+  {
+    "label": "Other Rotational Spectroscopy Groups",
+    "source": "http://info.ifpan.edu.pl/~kisiel/rotlinks.htm",
+    "destination": "http://info.ifpan.edu.pl/~kisiel/rotlinks.htm"
+  },
+  {
+    "label": "The Texas Advanced Computing Center (TACC)",
+    "source": "https://portal.tacc.utexas.edu/",
+    "destination": "https://tacc.utexas.edu/"
+  },
+  {
+    "label": "Gaussian, Expanding the limits of computational chemistry",
+    "source": "https://gaussian.com/",
+    "destination": "https://gaussian.com/"
+  },
+  {
+    "label": "Web of Science",
+    "source": "https://login.ezhost.utrgv.edu/login?qurl=http%3a%2f%2fwebofknowledge.com",
+    "destination": "https://login.ezhost.utrgv.edu/login?qurl=http%3a%2f%2fwebofknowledge.com"
+  },
+  {
+    "label": "SciFinder",
+    "source": "https://idp.utrgv.edu/idp/profile/SAML2/Redirect/SSO;jsessionid=1tiu7kaexh77r16xeu6tpc65jb?execution=e1s1",
+    "destination": "https://scifinder-n.cas.org/"
+  },
+  {
+    "label": "Physics Department",
+    "source": "https://www.utrgv.edu/physics/",
+    "destination": "https://www.utrgv.edu/cos/schools-and-departments/physics-and-astronomy/"
+  },
+  {
+    "label": "UTRGV",
+    "source": "https://www.utrgv.edu/en-us/",
+    "destination": "https://www.utrgv.edu/en-us/"
+  },
+  {
+    "label": "Faculty Profile Page",
+    "source": "https://webapps.utrgv.edu/aa/dm/#/user/wei.lin",
+    "destination": "https://webapps.utrgv.edu/aa/dm/#/user/wei.lin"
+  }
+]

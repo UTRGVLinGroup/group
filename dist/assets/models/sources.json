@@ -1,0 +1,44 @@
+[
+  {
+    "name": "chlorosulfonic acid",
+    "CID": 24638,
+    "MolecularFormula": "ClHO3S",
+    "IUPACName": "sulfurochloridic acid",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24638/SDF?record_type=3d"
+  },
+  {
+    "name": "3,4,5-trifluorobenzoic acid",
+    "CID": 853154,
+    "MolecularFormula": "C7H3F3O2",
+    "IUPACName": "3,4,5-trifluorobenzoic acid",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/853154/SDF?record_type=3d"
+  },
+  {
+    "name": "3,5-difluorobenzoic acid",
+    "CID": 101265,
+    "MolecularFormula": "C7H4F2O2",
+    "IUPACName": "3,5-difluorobenzoic acid",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101265/SDF?record_type=3d"
+  },
+  {
+    "name": "1,1-diiodoethane",
+    "CID": 68980,
+    "MolecularFormula": "C2H4I2",
+    "IUPACName": "1,1-diiodoethane",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68980/SDF?record_type=3d"
+  },
+  {
+    "name": "3,3,3-trifluoro-2-(trifluoromethyl)propanoic acid",
+    "CID": 385606,
+    "MolecularFormula": "C4H2F6O2",
+    "IUPACName": "3,3,3-trifluoro-2-(trifluoromethyl)propanoic acid",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/385606/SDF?record_type=3d"
+  },
+  {
+    "name": "formic acid",
+    "CID": 284,
+    "MolecularFormula": "CH2O2",
+    "IUPACName": "formic acid",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/284/SDF?record_type=3d"
+  }
+]

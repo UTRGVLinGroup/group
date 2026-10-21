@@ -1,0 +1,335 @@
+/* ================================================================
+PREAMBLE & VARIABLES
+================================================================
+*/
+
+:root {
+    /* UTRGV Official Branding & Palette */
+    --utrgv-orange: #F05023;
+    --dark-charcoal: #2D2926;
+    --utrgv-gray: #54585A;
+    --bg-light: #fcfcfc;
+    --white: #ffffff;
+    
+    /* Animation & Glassmorphism Defaults */
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --transition-speed: 0.3s;
+    --border-radius: 12px;
+}
+
+/* ================================================================
+GLOBAL RESET
+================================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ================================================================
+SHARED COMPONENT: GLASSMORPHISM NAVBAR
+================================================================
+*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--utrgv-orange);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-charcoal);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    transition: var(--transition-speed);
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--utrgv-orange);
+    background: rgba(240, 80, 35, 0.05);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px;
+    list-style: none;
+    margin-top: 10px;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-in;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 0;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--utrgv-orange);
+    color: var(--white);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ================================================================
+   GROUP PAGE SPECIFIC STYLES
+   ================================================================ */
+
+/* Recruitment Section */
+.recruitment-section {
+    background: #fdf2ee; /* Very light orange tint */
+    padding: 40px;
+    border-radius: var(--border-radius);
+    margin-bottom: 60px;
+    border: 1px solid rgba(240, 80, 35, 0.1);
+}
+
+.meeting-notice {
+    background: var(--utrgv-orange);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.recruitment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.recruit-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.recruit-card h3 {
+    color: var(--utrgv-orange);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.recruit-card p {
+    font-size: 0.9rem;
+    color: var(--utrgv-gray);
+}
+
+/* Student Grid (Current Graduate Students) */
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.student-item {
+    background: var(--white);
+    padding: 20px;
+    border-left: 4px solid var(--utrgv-orange);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.student-name {
+    display: block;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.student-meta {
+    font-size: 0.85rem;
+    color: var(--utrgv-gray);
+}
+
+/* Alumni Section */
+.group-section {
+    margin-bottom: 60px;
+}
+
+.alumni-container h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 30px 0 15px;
+    color: var(--dark-charcoal);
+}
+
+.alumni-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.alumni-entry {
+    font-size: 0.95rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Alumni Table */
+.alumni-table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.alumni-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.alumni-table th, .alumni-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.alumni-table th {
+    background: #f8f8f8;
+    color: var(--utrgv-orange);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* Adds space to the right of the Name column */
+.alumni-table td:first-child {
+    padding-right: 50px; /* Increase this number for more width */
+    white-space: nowrap; /* Prevents the name from wrapping to two lines */
+}
+
+/* Optional: Ensures the distinction column has some breathing room too */
+.alumni-table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Expanded Simple List */
+.alumni-simple-list {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 2;
+    font-size: 0.9rem;
+    color: var(--utrgv-gray);
+}
+
+.hs-list {
+    list-style: none;
+}
+
+.hs-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Archive Toggle Logic */
+.archive-hidden {
+    display: none; /* Hidden by default */
+    opacity: 0;
+}
+
+.reveal-animation {
+    display: block !important; /* Shows the element */
+    animation: fadeIn 0.4s ease forwards;
+}
+
+/* Optional: Improve button styling */
+.btn-archive {
+    background: var(--utrgv-gray);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.btn-archive:hover {
+    background: var(--utrgv-orange);
+}
+
+
+.footer { text-align: center; padding: 3rem; background: var(--dark-charcoal); color: white; margin-top: 4rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .alumni-list {
+        grid-template-columns: 1fr;
+    }
+}

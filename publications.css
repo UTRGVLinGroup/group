@@ -1,0 +1,163 @@
+/* ================================================================
+PREAMBLE & VARIABLES
+================================================================ */
+:root {
+    --utrgv-orange: #F05023;
+    --dark-charcoal: #2D2926;
+    --utrgv-gray: #54585A;
+    --bg-light: #fcfcfc;
+    --white: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --transition-speed: 0.3s;
+    --border-radius: 12px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+}
+
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+/* ================================================================
+NAVBAR & HEADER
+================================================================ */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--utrgv-orange);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-charcoal);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    transition: var(--transition-speed);
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--utrgv-orange);
+    background: rgba(240, 80, 35, 0.05);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px;
+    list-style: none;
+    margin-top: 10px;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-in;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 0;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--utrgv-orange);
+    color: var(--white);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Publication Specific Styles */
+.pub-header { text-align: center; margin-bottom: 3rem; }
+.pub-header h1 { font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 1.5rem; }
+
+#pubSearch {
+    width: 100%; max-width: 500px; padding: 12px 20px;
+    border: 1px solid #ddd; border-radius: 30px; margin-bottom: 1.5rem;
+    font-size: 1rem; outline: none; transition: border 0.3s;
+}
+#pubSearch:focus { border-color: var(--utrgv-orange); }
+
+.filter-group { display: flex; justify-content: center; gap: 10px; margin-bottom: 2rem; }
+.filter-btn {
+    padding: 8px 18px; border: 1px solid #ddd; background: white;
+    border-radius: 20px; cursor: pointer; transition: 0.3s;
+}
+.filter-btn.active { background: var(--utrgv-orange); color: white; border-color: var(--utrgv-orange); }
+
+/* Cards */
+.pub-card {
+    background: white; padding: 1.5rem; border-radius: var(--border-radius);
+    margin-bottom: 1.5rem; border-left: 4px solid var(--utrgv-orange);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.pub-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+.authors { color: var(--utrgv-gray); font-size: 0.95rem; margin-bottom: 0.5rem; }
+.journal-info { font-weight: 600; color: var(--dark-charcoal); font-size: 0.9rem; }
+
+.pub-actions { display: flex; gap: 12px; margin-top: 1.2rem; }
+.btn {
+    padding: 8px 15px; border-radius: 5px; text-decoration: none;
+    font-size: 0.85rem; cursor: pointer; border: 1px solid var(--utrgv-orange);
+    transition: 0.2s;
+}
+.view-link { background: var(--utrgv-orange); color: white; }
+.cite-btn { background: transparent; color: var(--utrgv-orange); }
+
+/* Cite Animation */
+.cite-btn.success {
+    background: #28a745; border-color: #28a745; color: white;
+}
+
+.footer { text-align: center; padding: 3rem; background: var(--dark-charcoal); color: white; margin-top: 4rem; }

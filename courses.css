@@ -1,0 +1,250 @@
+/* ================================================================
+PREAMBLE & VARIABLES
+================================================================ */
+:root {
+    --utrgv-orange: #F05023;
+    --dark-charcoal: #2D2926;
+    --utrgv-gray: #54585A;
+    --bg-light: #fcfcfc;
+    --white: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --transition-speed: 0.3s;
+    --border-radius: 12px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+}
+
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+/* ================================================================
+NAVBAR & HEADER
+================================================================ */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--utrgv-orange);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-charcoal);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    transition: var(--transition-speed);
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--utrgv-orange);
+    background: rgba(240, 80, 35, 0.05);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px;
+    list-style: none;
+    margin-top: 10px;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-in;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 0;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--utrgv-orange);
+    color: var(--white);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* ================================================================
+COURSES PAGE GRID & CARDS
+================================================================ */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.course-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.semester-tag {
+    display: inline-block;
+    background: rgba(240, 80, 35, 0.1);
+    color: var(--utrgv-orange);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.course-list {
+    list-style: none;
+}
+
+.course-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.course-list li:last-child {
+    border-bottom: none;
+}
+
+.course-list li strong {
+    color: var(--utrgv-orange);
+    margin-right: 10px;
+}
+
+/* Styling for Graduate Courses */
+.grad-course {
+    color: var(--utrgv-gray);
+    font-style: italic;
+}
+
+.grad-course::after {
+    content: " (Grad)";
+    font-size: 0.7rem;
+    vertical-align: middle;
+    background: #eee;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-style: normal;
+}
+
+/* Special styling for Leave of Absence */
+.special-notice {
+    border: 2px dashed var(--utrgv-orange);
+    background: rgba(240, 80, 35, 0.02);
+}
+
+/* ================================================================
+ANIMATED ARCHIVE
+================================================================ */
+.archive-hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-animation {
+    max-height: 5000px;
+    opacity: 1;
+    margin-top: 30px;
+}
+
+.archive-trigger-wrapper {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.btn-archive {
+    background: white;
+    border: 2px solid var(--utrgv-orange);
+    color: var(--utrgv-orange);
+    padding: 12px 35px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-archive:hover {
+    background: var(--utrgv-orange);
+    color: white;
+}
+
+.footer { text-align: center; padding: 3rem; background: var(--dark-charcoal); color: white; margin-top: 4rem; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
